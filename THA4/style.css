@@ -1,0 +1,39 @@
+span{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+}
+.outer_circle{
+    height: 200px;
+    width: 200px;
+    border: 30px solid red;
+    border-radius: 50%; 
+    display: inline-block;
+}
+.first_hand{
+    animation: rot 3600ms infinite linear;
+
+}
+.second_hand{
+    animation: rot 60ms infinite linear;
+}
+.hand{
+    border-left: 2px solid black;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform-origin: top;
+
+}
+@keyframes rot{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.hour_hand{
+    animation: rot 86400ms infinite linear;
+}
